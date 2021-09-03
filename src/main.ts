@@ -22,6 +22,8 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './assets/css/variables.css';
+
+/* Tailwind CSS */
 import './assets/css/tailwind.css'
 
 const app = createApp(App)
