@@ -18,7 +18,19 @@ jobs:
         run: |
           cd ./ionic
           npm ci
+      - name: Lint
+        run: |
+          cd ./ionic
+          npm run lint
+      - name: Test Unit
+        run: |
+          cd ./ionic
+          npm run test:unit
+      - name: Test e2e
+        run: |
+          cd ./ionic
+          npm run test:e2e
       - name: Build
         run: |
           cd ./ionic
-          npm build
+          npm run build
