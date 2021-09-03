@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Frontend
 
 on:
@@ -10,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy a new image
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,15 +20,8 @@ jobs:
         run: |
           cd ./ionic
           npm run lint
-      - name: Test Unit
-        run: |
-          cd ./ionic
-          npm run test:unit
-      - name: Test e2e
-        run: |
-          cd ./ionic
-          npm run test:e2e
       - name: Build
         run: |
           cd ./ionic
           npm run build
+          
