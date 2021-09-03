@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "gallery-app",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

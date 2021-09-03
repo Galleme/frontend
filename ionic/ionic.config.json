@@ -1,0 +1,8 @@
+{
+  "name": "gallery-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "96aeea76"
+}
