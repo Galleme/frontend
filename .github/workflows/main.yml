@@ -19,26 +19,18 @@ jobs:
           cd ./ionic
           npm ci
       - name: Lint
-        uses: lewagon/wait-on-check-action@v1.0.0
-        needs: install
         run: |
           cd ./ionic
           npm lint
       - name: Test Unit
-        uses: lewagon/wait-on-check-action@v1.0.0
-        needs: install
         run: |
           cd ./ionic
           npm test:unit
       - name: Test e2e
-        uses: lewagon/wait-on-check-action@v1.0.0
-        needs: install
         run: |
           cd ./ionic
           npm test:e2e
       - name: Build
-        uses: lewagon/wait-on-check-action@v1.0.0
-        needs: install
         run: |
           cd ./ionic
           npm build
