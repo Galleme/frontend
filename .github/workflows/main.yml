@@ -13,15 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install
-        run: |
-          cd ./ionic
-          npm ci
+        run: npm ci
       - name: Lint
-        run: |
-          cd ./ionic
-          npm run lint
+        run: npm run lint
       - name: Build
-        run: |
-          cd ./ionic
-          npm run build
+        run: npm run build
           
