@@ -1,5 +1,6 @@
 // Import your Component
 import ExampleComponent from "../components/ExampleComponent";
+import faker from 'faker';
 
 // Export a default function
 // This is where you define your components and what props are needed
@@ -9,6 +10,7 @@ export default {
     argTypes: {
         color: { control: 'color' },
         size: { control: { type: 'select', options: ['text-sm', 'text-md', 'text-xl'] } },
+        label: { control: 'text', defaultValue: faker.lorem.paragraphs(5) },
     },
 };
 
@@ -28,12 +30,10 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 // You can change the args and props to modify the story here
 Primary.args = {
-    label: 'Test Text',
     size: 'text-md',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-    label: 'Test Text 2',
     size: 'text-md',
 };
