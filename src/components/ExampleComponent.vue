@@ -16,8 +16,8 @@
     </p>
   </div>
 </template>
-
-<script>
+gfgdgffggf
+<script>fdfdgfd
 import Fa from 'vue-fa'
 import { faStar, faFlag, faPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,7 +27,7 @@ export default {
     Fa,
   },
   setup() {
-    return {
+    return {fggffggfgffggfgfgf
       faStar, faFlag, faPlus
     }
   },
