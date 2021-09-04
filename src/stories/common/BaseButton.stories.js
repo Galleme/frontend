@@ -1,12 +1,12 @@
 import BaseButton from "../../components/common/BaseButton";
 
 export default {
-    title: 'Common/Button',
+    title: 'Common/Base Button',
     component: BaseButton,
     argTypes: {
         type: {
             control: { type: 'select' },
-            options: ['primary', 'secondary', 'danger']
+            options: ['primary', 'secondary', 'success', 'danger']
         },
         onClick: { action: 'clicked' },
     },
@@ -29,5 +29,23 @@ Primary.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
     type: 'secondary',
+    size: 'text-md',
+};
+
+export const Success= Template.bind({});
+Success.args = {
+    type: 'success',
+    size: 'text-md',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+    type: 'danger',
+    size: 'text-md',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true,
     size: 'text-md',
 };
