@@ -1,5 +1,32 @@
-# gallery-app
+# Galleme (frontend)
+This is the frontend repository for Galleme. A media management tool made for travelers.
+Our goal is to help travelers sort and view their media from their trips. With the help of 
+AI we will help travelers by mapping their trips and automatically creating albums. 
+In addition to this we hope to provide an alternative to big cloud hosts. We have a special focus
+on security and provide a self-hosted solution.
 
+## Setup
+
+```bash
+# install dependencies
+$ npm ci
+
+# serve with hot reload
+$ npm run serve
+
+# build for production and launch server
+$ npm run build
+
+# for component development
+$ npm run storybook
+
+# to run tests
+$ npm run test:unit
+$ npm run test:e2e
+
+# to fix linting
+$ npm run lint -- --fix
+```
 
 ## Storybook
 
