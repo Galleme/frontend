@@ -17,10 +17,12 @@
     "@capacitor/haptics": "1.0.3",
     "@capacitor/keyboard": "1.0.3",
     "@capacitor/status-bar": "1.0.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@ionic/vue": "^5.4.0",
     "@ionic/vue-router": "^5.4.0",
     "core-js": "^3.6.5",
     "vue": "^3.2.1",
+    "vue-fa": "^3.0.2",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
@@ -48,6 +50,7 @@
     "babel-loader": "^8.2.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
+    "faker": "^5.5.3",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
     "typescript": "^4.3.5",
