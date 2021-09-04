@@ -1,5 +1,5 @@
 <template>
-  <button class="button" :class="classes" :disabled="disabled" @click="$emit('click')">
+  <button class="button" :class="classes" :disabled="disabled" @click="$emit('onClick')">
     <slot />
   </button>
 </template>
@@ -14,7 +14,10 @@ export default {
     },
     type: {
       type: String,
-      default: '',
+      default: 'primary',
+      validator: function (value) {
+        return ['primary', 'secondary', 'danger'].indexOf(value) !== -1;
+      },
     },
     size: {
       type: String,
@@ -36,6 +39,10 @@ export default {
 
 .primary {
   @apply text-white bg-indigo-500 hover:bg-indigo-700 focus:ring-indigo-400;
+}
+
+.secondary {
+  @apply text-white bg-gray-400 hover:bg-gray-600 focus:ring-gray-300;
 }
 
 </style>
