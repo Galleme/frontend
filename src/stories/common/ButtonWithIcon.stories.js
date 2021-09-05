@@ -27,7 +27,7 @@ const Template = (args) => ({
         '<button-with-icon v-bind="args">' +
             '<template #text>Test Button</template>\n' +
             '<template #icon>' +
-                '<fa class="text-blue-400 mr-3" size="2x" icon="faFlag"/>' +
+                '<fa class="text-blue-400 mr-3" size="2x" :icon="faFlag"/>' +
             '</template>' +
         '</button-with-icon>',
 });
