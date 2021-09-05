@@ -2,7 +2,6 @@ import ButtonWithIcon from "../../components/common/ButtonWithIcon";
 import {faFlag, faPlus, faStar} from "@fortawesome/free-solid-svg-icons";
 import Fa from 'vue-fa'
 
-
 export default {
     title: 'Common/ButtonWithIcon',
     component: ButtonWithIcon, Fa,
