@@ -18,7 +18,13 @@ const Template = (args) => ({
     setup() {
         return { faStar, faFlag, faPlus, args };
     },
-    template: '<button-with-icon v-bind="args">Test Button</button-with-icon>',
+    template:
+        '<button-with-icon v-bind="args">' +
+            '<template #text>Test Button</template>\n' +
+            '<template #icon>' +
+                '<fa class="text-blue-400 mr-3" size="2x" :icon="faStar"/>' +
+            '</template>' +
+        '</button-with-icon>',
 });
 
 export const Primary = Template.bind({});
