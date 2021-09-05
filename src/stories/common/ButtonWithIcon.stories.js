@@ -17,12 +17,35 @@ const Template = (args) => ({
     setup() {
         return { args };
     },
-    template: '<button-with-icon v-bind="args" />',
+    template: '<button-with-icon v-bind="args">Test Button</button-with-icon>',
 });
 
-// For each version of the Component create a new story
 export const Primary = Template.bind({});
-// You can change the args and props to modify the story here
 Primary.args = {
+    type: 'primary',
+    size: 'text-md',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+    type: 'secondary',
+    size: 'text-md',
+};
+
+export const Success= Template.bind({});
+Success.args = {
+    type: 'success',
+    size: 'text-md',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+    type: 'danger',
+    size: 'text-md',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true,
     size: 'text-md',
 };
