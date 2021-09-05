@@ -1,5 +1,5 @@
 import ButtonWithIcon from "../../components/common/ButtonWithIcon";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
+import {faFlag, faPlus, faStar} from "@fortawesome/free-solid-svg-icons";
 
 export default {
     title: 'Common/ButtonWithIcon',
@@ -16,7 +16,7 @@ export default {
 const Template = (args) => ({
     components: { ButtonWithIcon },
     setup() {
-        return { args };
+        return { faStar, faFlag, faPlus, args };
     },
     template: '<button-with-icon v-bind="args">Test Button</button-with-icon>',
 });
@@ -25,5 +25,4 @@ export const Primary = Template.bind({});
 Primary.args = {
     type: 'primary',
     size: 'text-md',
-    icon: faStar,
 };
