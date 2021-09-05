@@ -29,11 +29,6 @@ export default {
       type: String,
       default: '',
     },
-    computed: {
-      classes() {
-        return `${this.disabled ? 'disabled' : this.type} ${this.size}}`
-      },
-    },
   }
 }
 </script>
