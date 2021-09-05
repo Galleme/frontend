@@ -1,11 +1,11 @@
 <template>
   <BaseButton>
-    <IonTextarea>Hello</IonTextarea>
   </BaseButton>
 </template>
 
 <script>
-import BaseButton from "@/components/common/BaseButton";
+import BaseButton from "../../components/common/BaseButton";
+
 export default {
   name: "ButtonWithIcon",
   components: {BaseButton}
