@@ -1,23 +1,17 @@
 <template>
   <BaseButton :type="type" :disabled="disabled" :size="size">
-    <fa class="text-blue-400 mr-3" size="2x" :icon="icon"/>
-    <slot/>
+    <slot name="icon"/>
+    <slot name="text"/>
   </BaseButton>
 </template>
 
 <script>
 import BaseButton from "../../components/common/BaseButton";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
 
 export default {
   name: "ButtonWithIcon",
   components: {BaseButton},
   props: {
-    icon: {
-      type: Object, // this is probably wrong?
-      default: faStar,
-    },
-
     disabled: {
       type: Boolean,
       default: false,
