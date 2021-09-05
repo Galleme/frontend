@@ -1,9 +1,10 @@
 import ButtonWithIcon from "../../components/common/ButtonWithIcon";
 import {faFlag, faPlus, faStar} from "@fortawesome/free-solid-svg-icons";
+import Fa from 'vue-fa'
 
 export default {
     title: 'Common/ButtonWithIcon',
-    component: ButtonWithIcon,
+    component: ButtonWithIcon, Fa,
     argTypes: {
         type: {
             control: { type: 'select' },
@@ -14,7 +15,10 @@ export default {
 };
 
 const Template = (args) => ({
-    components: { ButtonWithIcon },
+    components: {
+        ButtonWithIcon,
+        Fa,
+    },
     setup() {
         return { faStar, faFlag, faPlus, args };
     },
