@@ -1,8 +1,12 @@
 <template>
-  <BaseButton :type="type" :disabled="disabled" :size="size">
+  <BaseButton
+    :type="type"
+    :disabled="disabled"
+    :size="size"
+  >
     <div class="flex items-center">
-      <slot name="icon"/>
-      <slot name="text"/>
+      <slot name="icon" />
+      <slot name="text" />
     </div>
   </BaseButton>
 </template>

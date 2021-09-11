@@ -7,15 +7,18 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
-    name: Build
+  Deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: install
+      - name: Install
         run: npm ci
       - name: Lint
         run: npm run lint
-      - name: Build
+      - name: Test
+        run: npm run test:unit
+      - name: Build Storybook
+        run: npm run build-storybook
+      - name: Build Frontend
         run: npm run build
-          
