@@ -1,5 +1,10 @@
 <template>
-  <button class="button" :class="classes" :disabled="disabled" @click="$emit('onClick')">
+  <button
+    class="button"
+    :class="classes"
+    :disabled="disabled"
+    @click="$emit('onClick')"
+  >
     <slot />
   </button>
 </template>
@@ -24,6 +29,7 @@ export default {
       default: '',
     }
   },
+  emits: ['onClick'],
   computed: {
     classes() {
       return `${this.disabled ? 'disabled' : this.type} ${this.size}}`
