@@ -1,5 +1,6 @@
 # Galleme (frontend)
 ![build status](https://img.shields.io/github/workflow/status/Galleme/frontend/Frontend?style=for-the-badge)
+![code quality](https://img.shields.io/codacy/grade/fd19d9776f2b497597ad19c73efa1fba?style=for-the-badge)
 ![latest release](https://img.shields.io/github/v/release/Galleme/frontend?color=%23ff5500&include_prereleases&style=for-the-badge)
 ![issue status](https://img.shields.io/github/issues-raw/Galleme/frontend?color=%23ff5500&style=for-the-badge)
 
