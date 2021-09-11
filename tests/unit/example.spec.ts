@@ -1,9 +1,9 @@
 import { mount } from '@vue/test-utils'
-import Tab1 from '@/views/Tab1.vue'
+import Index from '../../src/views/index.vue'
 
-describe('Tab1.vue', () => {
-  it('renders tab 1 view', () => {
-    const wrapper = mount(Tab1)
-    expect(wrapper.text()).toMatch('Tab 1 page')
+describe('Render Homepage', () => {
+  it('renders home page', () => {
+    const wrapper = mount(Index)
+    expect(wrapper.text()).toMatch('Index Page')
   })
 })
