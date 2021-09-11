@@ -35,17 +35,17 @@ $ npm run lint -- --fix
 
 ## Storybook
 
-### What is Storybook?
+### What is Storybook
 Storybook is a service we use to develop and design our components. 
 It allows us to design the components without a backend. In order to start Storybook execute:
 
 `$ npm run storybook`
 
-### Creating a story:
+### Creating a story
 When creating a new component please create a corresponding story in the `/stories` directory.
 
 Example:
-```
+```bash
 /src/components/common/Button.vue
 /src/stories/common/Button.stories.js
 ```

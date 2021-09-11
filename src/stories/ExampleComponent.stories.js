@@ -20,7 +20,7 @@ const Template = (args) => ({
     components: { ExampleComponent },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
-        return { args };
+        return args;
     },
     // And then the `args` are bound to your component with `v-bind="args"`
     template: '<example-component v-bind="args" />',

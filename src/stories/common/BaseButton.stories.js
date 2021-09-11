@@ -15,7 +15,7 @@ export default {
 const Template = (args) => ({
     components: { BaseButton },
     setup() {
-        return { args };
+        return args;
     },
     template: '<base-button v-bind="args">Test Button</base-button>',
 });
