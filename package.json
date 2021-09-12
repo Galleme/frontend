@@ -2,14 +2,15 @@
   "name": "gallery-app",
   "version": "0.0.1",
   "private": true,
+  "description": "An Ionic project",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "@capacitor/app": "1.0.3",
@@ -23,7 +24,8 @@
     "core-js": "^3.6.5",
     "vue": "^3.2.1",
     "vue-fa": "^3.0.2",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.4",
@@ -42,6 +44,7 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "^5.0.0-beta.3",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/eslint-config-typescript": "^5.0.2",
@@ -56,6 +59,5 @@
     "typescript": "^4.3.5",
     "vue-jest": "^5.0.0-0",
     "vue-loader": "^16.5.0"
-  },
-  "description": "An Ionic project"
+  }
 }
