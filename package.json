@@ -2,15 +2,15 @@
   "name": "gallery-app",
   "version": "0.0.1",
   "private": true,
-  "description": "An Ionic project",
+  "description": "A gallery app for travelers.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@capacitor/app": "1.0.3",
