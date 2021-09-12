@@ -34,29 +34,29 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
     type: 'primary',
-    size: 'text-sm ',
+    size: 'text-sm',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
     type: 'secondary',
-    size: 'text-md ',
+    size: 'text-md',
 };
 
 export const Success= Template.bind({});
 Success.args = {
     type: 'success',
-    size: 'text-lg ',
+    size: 'text-lg',
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
     type: 'danger',
-    size: 'text-xl ',
+    size: 'text-xl',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
     disabled: true,
-    size: 'text-md ',
+    size: 'text-md',
 };
