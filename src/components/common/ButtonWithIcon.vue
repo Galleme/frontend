@@ -7,7 +7,7 @@
     <div class="flex items-center">
       <div
         :class="classes"
-        class="mr-1"
+        class="mr-2"
       >
         <slot name="icon" />
       </div>
