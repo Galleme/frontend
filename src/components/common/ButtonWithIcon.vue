@@ -5,7 +5,9 @@
     :size="size"
   >
     <div class="flex items-center">
-      <slot name="icon" />
+      <div :class="classes" class="mr-1">
+        <slot name="icon" />
+      </div>
       <slot name="text" />
     </div>
   </BaseButton>
@@ -33,6 +35,29 @@ export default {
       type: String,
       default: '',
     },
+  },
+  computed: {
+    classes() {
+      return `${this.disabled ? 'disabledIcon' : this.type + 'Icon'} ${this.size}}`
+    },
   }
 }
 </script>
+
+<style scoped>
+.primaryIcon{
+  @apply text-purple-300;
+}
+.secondaryIcon{
+  @apply text-gray-300;
+}
+.disabledIcon{
+  @apply text-gray-100;
+}
+.successIcon{
+  @apply text-green-300;
+}
+.dangerIcon{
+  @apply text-red-300;
+}
+</style>
