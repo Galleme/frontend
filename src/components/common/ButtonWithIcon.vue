@@ -1,6 +1,6 @@
 <template>
   <BaseButton class="flex items-center" :type="type" :disabled="disabled" :size="size">
-    <fa :class="classes" :size="size" :icon="icon"/>
+    <fa :class="classes" class="mr-3" :size="size" :icon="icon"/>
     <slot/>
   </BaseButton>
 </template>
@@ -47,18 +47,18 @@ export default {
 
 <style scoped>
 .primaryIcon {
-  @apply text-purple-300 mr-3
+  @apply text-purple-300
 }
 .disabledIcon {
-  @apply text-gray-100 mr-3
+  @apply text-gray-100
 }
 .secondaryIcon {
-  @apply text-gray-300 mr-3
+  @apply text-gray-300
 }
 .successIcon {
-  @apply text-green-200 mr-3
+  @apply text-green-200
 }
 .dangerIcon {
-  @apply text-red-300 mr-3
+  @apply text-red-300
 }
 </style>
