@@ -5,7 +5,10 @@
     :size="size"
   >
     <div class="flex items-center">
-      <div :class="classes" class="mr-1">
+      <div
+        :class="classes"
+        class="mr-1"
+      >
         <slot name="icon" />
       </div>
       <slot name="text" />
