@@ -29,28 +29,28 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
     type: 'primary',
-    size: 'text-md',
+    size: 'text-sm ',
 };
 export const Secondary = Template.bind({});
 Secondary.args = {
     type: 'secondary',
-    size: 'text-md',
+    size: 'text-md ',
 };
 
 export const Success = Template.bind({});
 Success.args = {
     type: 'success',
-    size: 'text-md',
+    size: 'text-lg ',
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
     type: 'danger',
-    size: 'text-md',
+    size: 'text-md ',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
     disabled: true,
-    size: 'text-md',
+    size: 'text-md ',
 };
