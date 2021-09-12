@@ -32,7 +32,7 @@ export default {
   emits: ['onClick'],
   computed: {
     classes() {
-      return `${this.disabled ? 'disabled' : this.type} ${this.size} `
+      return `${this.disabled ? 'disabled' : this.type} ${this.size}`
     },
   },
 }

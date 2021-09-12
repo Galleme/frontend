@@ -26,7 +26,7 @@ const Template = (args) => ({
         `<button-with-icon v-bind="args">
             <template #text>Test Button</template>
             <template #icon>
-                <fa class="text-blue-400 mr-3" size="2x" :icon="faFlag"/>
+                <fa :icon="faFlag"/>
             </template>
         </button-with-icon>`,
 });
@@ -34,5 +34,29 @@ const Template = (args) => ({
 export const Primary = Template.bind({});
 Primary.args = {
     type: 'primary',
+    size: 'text-sm',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+    type: 'secondary',
+    size: 'text-md',
+};
+
+export const Success= Template.bind({});
+Success.args = {
+    type: 'success',
+    size: 'text-lg',
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+    type: 'danger',
+    size: 'text-xl',
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    disabled: true,
     size: 'text-md',
 };
