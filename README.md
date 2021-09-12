@@ -1,6 +1,6 @@
 # Galleme (frontend)
 ![build status](https://img.shields.io/github/workflow/status/Galleme/frontend/Frontend?style=for-the-badge)
-![code quality](https://img.shields.io/codacy/grade/52b25042d60647008d7a843203eb5b3b?style=for-the-badge)
+![code quality](https://img.shields.io/codacy/grade/fd19d9776f2b497597ad19c73efa1fba?style=for-the-badge)
 ![latest release](https://img.shields.io/github/v/release/Galleme/frontend?color=%23ff5500&include_prereleases&style=for-the-badge)
 ![issue status](https://img.shields.io/github/issues-raw/Galleme/frontend?color=%23ff5500&style=for-the-badge)
 
@@ -35,17 +35,17 @@ $ npm run lint -- --fix
 
 ## Storybook
 
-### What is Storybook?
+### What is Storybook
 Storybook is a service we use to develop and design our components. 
 It allows us to design the components without a backend. In order to start Storybook execute:
 
 `$ npm run storybook`
 
-### Creating a story:
+### Creating a story
 When creating a new component please create a corresponding story in the `/stories` directory.
 
 Example:
-```
+```bash
 /src/components/common/Button.vue
 /src/stories/common/Button.stories.js
 ```
