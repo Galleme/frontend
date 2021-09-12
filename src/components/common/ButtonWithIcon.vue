@@ -50,7 +50,7 @@ export default {
   @apply text-purple-300 mr-3
 }
 .disabledIcon {
-  @apply text-purple-400 mr-3
+  @apply text-gray-100 mr-3
 }
 .secondaryIcon {
   @apply text-gray-300 mr-3
@@ -59,6 +59,6 @@ export default {
   @apply text-green-200 mr-3
 }
 .dangerIcon {
-  @apply text-purple-400 mr-3
+  @apply text-red-300 mr-3
 }
 </style>
