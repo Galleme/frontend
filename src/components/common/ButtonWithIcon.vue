@@ -1,7 +1,11 @@
 <template>
-  <BaseButton class="flex items-center" :type="type" :disabled="disabled" :size="size">
-    <fa :class="classes" class="mr-3" :size="size" :icon="icon"/>
-    <slot/>
+  <BaseButton
+      class="flex items-center"
+      :type="type"
+      :disabled="disabled" :size="size"
+  >
+    <fa :class="classes" class="mr-3" :size="size" :icon="icon" />
+    <slot />
   </BaseButton>
 </template>
 
@@ -21,9 +25,11 @@ export default {
   props: {
     disabled: {
       type: Boolean,
+      default: false,
     },
     icon: {
       type: Object,
+      default: faStar,
     },
     type: {
       type: String,
@@ -34,7 +40,7 @@ export default {
     },
     size: {
       type: String,
-      default: '',
+      default: 'tex-md',
     },
   },
   computed: {
