@@ -39,7 +39,7 @@ export default {
   },
   computed: {
     classes() {
-      return `${this.disabled ? 'disabled' : this.type + 'Icon'} ${this.size}}`
+      return `${this.disabled ? 'disabledIcon' : this.type + 'Icon'} ${this.size}}`
     },
   }
 }
