@@ -1,0 +1,22 @@
+name: Frontend Pull request
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Deploy:
+    name: Test and Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm run test:unit
+      - name: Build Storybook
+        run: npm run build-storybook
+      - name: Build Frontend
+        run: npm run build
