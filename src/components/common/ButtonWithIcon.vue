@@ -1,10 +1,16 @@
 <template>
   <BaseButton
-      class="flex items-center"
-      :type="type"
-      :disabled="disabled" :size="size"
+    class="flex items-center"
+    :type="type"
+    :disabled="disabled"
+    :size="size"
   >
-    <fa :class="classes" class="mr-3" :size="size" :icon="icon" />
+    <fa
+      :class="classes"
+      class="mr-3"
+      :size="size"
+      :icon="icon"
+    />
     <slot />
   </BaseButton>
 </template>
