@@ -23,9 +23,9 @@ const Template = (args) => ({
         return { faStar, faFlag, faPlus, args };
     },
     template:
-        '<button-with-icon v-bind="args" :icon="faStar">' +
-            '<template #text>Test Button</template>' +
-        '</button-with-icon>',
+        '<button-with-icon v-bind="args" :icon="faStar">Text</button-with-icon>'
+        //     '<template #text>Test Button</template>' +
+        // '</button-with-icon>',
 });
 
 export const Primary = Template.bind({});
@@ -33,3 +33,4 @@ Primary.args = {
     type: 'primary',
     size: 'text-md',
 };
+

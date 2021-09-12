@@ -1,9 +1,7 @@
 <template>
-  <BaseButton :type="type" :disabled="disabled" :size="size">
-    <div class="flex items-center">
-      <fa class="text-blue-400 mr-3" :size="size" :icon="icon"/>
-      <slot name="text"/>
-    </div>
+  <BaseButton class="flex items-center" :type="type" :disabled="disabled" :size="size">
+    <fa :class="classes" :size="size" :icon="icon"/>
+    <slot/>
   </BaseButton>
 </template>
 
@@ -38,9 +36,29 @@ export default {
       type: String,
       default: '',
     },
-    created() {
-      console.log(this.icon)
-    },
   },
+  computed: {
+    classes() {
+      return `${this.disabled ? 'disabled' : this.type + 'Icon'} ${this.size}}`
+    },
+  }
 }
 </script>
+
+<style scoped>
+.primaryIcon {
+  @apply text-purple-300 mr-3
+}
+.disabledIcon {
+  @apply text-purple-400 mr-3
+}
+.secondaryIcon {
+  @apply text-gray-300 mr-3
+}
+.successIcon {
+  @apply text-green-200 mr-3
+}
+.dangerIcon {
+  @apply text-purple-400 mr-3
+}
+</style>
