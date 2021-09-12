@@ -33,4 +33,26 @@ Primary.args = {
     type: 'primary',
     size: 'text-md',
 };
+export const Secondary = Template.bind({});
+Primary.args = {
+    type: 'secondary',
+    size: 'text-md',
+};
 
+export const Success = Template.bind({});
+Primary.args = {
+    type: 'success',
+    size: 'text-md',
+};
+
+export const Danger = Template.bind({});
+Primary.args = {
+    type: 'danger',
+    size: 'text-md',
+};
+
+export const Disabled = Template.bind({});
+Primary.args = {
+    disabled: true,
+    size: 'text-md',
+};
