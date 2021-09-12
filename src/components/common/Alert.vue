@@ -22,14 +22,13 @@
 </template>
 
 <script>
-import BaseButton from "./BaseButton";
 import RouterLink from "@ionic/vue-router"
 import Fa from 'vue-fa'
 import { faCheckCircle, faInfoCircle, faTimesCircle, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default {
   name: "Alert",
-  components: {BaseButton, RouterLink, Fa},
+  components: {RouterLink, Fa},
   props: {
     title: {
       type: String,
